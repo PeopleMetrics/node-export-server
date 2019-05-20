@@ -144,7 +144,7 @@ depending on your setup, it may be possible to set the env variable in your `pac
 }
 ```
 
-*Library fetches* 
+*Library fetches*
 
 When fetching the built Highcharts library, the default behaviour is to
 fetch them from `code.highcharts.com`.
@@ -159,6 +159,10 @@ the afformentioned `ACCEPT_HIGHCHARTS_LICENSE` to `YES`.
 
 Use the environment variables `HIGHCHARTS_USE_MAPS` and `HIGHCHARTS_USE_GANTT`
 to enable support of either.
+
+#### Including optional wordcloud and annotations
+Set the environment variable `HIGHCHARTS_OPTIONALS` to `true` to enable support for both wordclouds
+as well as annotations.
 
 ## Note about process.exit listeners
 
