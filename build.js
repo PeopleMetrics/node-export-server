@@ -445,7 +445,8 @@ if (process.env.ACCEPT_HIGHCHARTS_LICENSE) {
       useIfDefined(process.env.HIGHCHARTS_USE_STYLED, true),
       useIfDefined(process.env.HIGHCHARTS_USE_MAPS, true),
       useIfDefined(process.env.HIGHCHARTS_MOMENT, false),
-      useIfDefined(process.env.HIGHCHARTS_USE_GANTT, true)
+      useIfDefined(process.env.HIGHCHARTS_USE_GANTT, true),
+      process.env.HIGHCHARTS_OPTIONALS ? getOptionals({wordcloud: 'y', annotations: 'y'}) : false
     );
 } else {
     console.log(fs.readFileSync(__dirname + '/msg/licenseagree.msg').toString().bold);
